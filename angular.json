@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "end-customer-screenflow": {
+    "smart-store-solution": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/end-customer-screenflow",
+            "outputPath": "dist/smart-store-solution",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,18 +64,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "end-customer-screenflow:build"
+            "browserTarget": "smart-store-solution:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "end-customer-screenflow:build:production"
+              "browserTarget": "smart-store-solution:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "end-customer-screenflow:build"
+            "browserTarget": "smart-store-solution:build"
           }
         },
         "test": {
@@ -113,11 +113,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "end-customer-screenflow:serve"
+            "devServerTarget": "smart-store-solution:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "end-customer-screenflow:serve:production"
+              "devServerTarget": "smart-store-solution:serve:production"
             }
           }
         }
@@ -248,5 +248,5 @@
       }
     }
   },
-  "defaultProject": "end-customer-screenflow"
+  "defaultProject": "smart-store-solution"
 }

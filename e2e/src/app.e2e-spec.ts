@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('end-customer-screenflow app is running!');
+    expect(page.getTitleText()).toEqual('smart-store-solution app is running!');
   });
 
   afterEach(async () => {
