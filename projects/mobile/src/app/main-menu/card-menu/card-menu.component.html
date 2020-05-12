@@ -1,0 +1,13 @@
+  <section fxFlexFill fxLayout="row wrap" fxLayout.xs="column"  fxLayoutGap="2rem" fxLayoutAlign="center space-around">
+    <section class="card-menu mat-elevation-z4" matRipple *ngFor="let menu of menus" >
+        <mat-card (click)="navigateToMenu(menu)">
+            <mat-card-header>
+                <div mat-card-avatar>{{menu.order}}</div>
+                <mat-card-title>{{menu.featureTitle}}</mat-card-title>
+            </mat-card-header>
+            <section mat-card-image>
+                <mat-icon>build</mat-icon>
+            </section>
+        </mat-card>
+    </section>
+  </section>

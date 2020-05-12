@@ -1,0 +1,12 @@
+<mat-toolbar color="primary" class="main-header mat-elevation-z6">
+  <mat-toolbar-row>    
+      <h2>{{firm.firmName}}</h2>
+      <section fxFlex></section>
+          <mat-icon  aria-hidden="false" aria-label="account" [matMenuTriggerFor]="menu">account_circle</mat-icon>
+          <mat-menu #menu="matMenu">
+              <button mat-menu-item routerLink="/profile">Profile</button>
+              <button mat-menu-item>Logout</button>
+            </mat-menu>
+        </mat-toolbar-row>
+  </mat-toolbar>
+  <router-outlet></router-outlet>

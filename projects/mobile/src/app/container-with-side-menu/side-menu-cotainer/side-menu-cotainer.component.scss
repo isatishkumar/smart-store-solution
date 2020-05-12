@@ -1,0 +1,24 @@
+.sidenav-container {
+  height: 91%;
+  min-height: 91%;
+  top: 60px;
+
+  .sidenav {
+    width: 200px;
+
+    .icon-wrapper {
+      color: #fff;
+      background: #777;
+      padding: 0.1rem;
+      border-radius: 15px;
+      margin-right: 0.6rem;
+    }
+  }
+
+  .menu-button {
+    border: none;
+    cursor: pointer;
+    padding: .3rem;
+    outline: none;
+  }
+}
