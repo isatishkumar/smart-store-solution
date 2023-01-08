@@ -10,7 +10,7 @@ import { MatDrawer } from '@angular/material';
 })
 export class SideMenuCotainerComponent implements OnInit {
   @Input() menuList: SideMenu[];
-  @ViewChild('drawer', { static: false }) drawer: MatDrawer;
+  @ViewChild('drawer') drawer: MatDrawer;
   activeMenu: SideMenu;
   constructor(private router: Router, private route: ActivatedRoute) { }
 
